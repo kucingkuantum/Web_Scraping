@@ -21,7 +21,7 @@ df = sf.scrap_table(url)
 
 
 medals = []
-for i in range(0,5):
+for i in range(0,len(df)):
     test_country = df['Code'][i]
     urlc = url + test_country
     medals.append(sf.medals_all(urlc))
